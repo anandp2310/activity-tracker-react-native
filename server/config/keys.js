@@ -1,8 +1,9 @@
-//keys.js - figoure out what set of credentials to return
-if (process.env.NODE_ENV === 'production'){
-    // we are in production - return prod set keys
-    module.exports = require('./prod');
-} else {
-    // we are in development - return the dev keys!!!
-    module.exports = require('./dev');
-}
+/**
+ * @Author: Your name
+ * @Date:   2023-05-09 20:19:13
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-05-09 20:29:54
+ */
+
+MONGO_URI = "mongodb+srv://Deepa123:Deepa123@cluster0.7rmtabr.mongodb.net/?retryWrites=true&w=majority"
+

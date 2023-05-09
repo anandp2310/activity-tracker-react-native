@@ -1,3 +1,9 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-05-09 20:19:13
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-05-09 20:37:53
+ */
 require("./models/User");
 require("./models/Track");
 const express = require("express");
@@ -14,7 +20,8 @@ app.use(bodyParser.json());
 app.use(authRoutes);
 app.use(trackRoutes);
 
-const mongoURI = keys.mongoURI;
+const mongoURI = "mongodb+srv://Deepa123:Deepa123@cluster0.7rmtabr.mongodb.net/?retryWrites=true&w=majority"
+;
 
 mongoose.connect(mongoURI);
 
