@@ -2,7 +2,7 @@
  * @Author: Your name
  * @Date:   2023-05-09 20:19:13
  * @Last Modified by:   Your name
- * @Last Modified time: 2023-05-09 20:51:29
+ * @Last Modified time: 2023-05-09 20:53:50
  */
 require("./src/models/User");
 require("./src/models/Track");
@@ -15,6 +15,7 @@ const requireAuth = require("./src/middlewares/requireAuth");
 const keys = require("./config/keys");
 
 const app = express();
+
 
 app.use(bodyParser.json());
 app.use(authRoutes);
