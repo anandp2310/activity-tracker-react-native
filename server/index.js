@@ -2,17 +2,17 @@
  * @Author: Your name
  * @Date:   2023-05-09 20:19:13
  * @Last Modified by:   Your name
- * @Last Modified time: 2023-05-09 20:37:53
+ * @Last Modified time: 2023-05-09 20:51:29
  */
-require("./models/User");
-require("./models/Track");
+require("./src/models/User");
+require("./src/models/Track");
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const authRoutes = require("./routes/authRoutes");
-const trackRoutes = require("./routes/trackRoutes");
-const requireAuth = require("./middlewares/requireAuth");
-const keys = require("../config/keys");
+const authRoutes = require("./src/routes/authRoutes");
+const trackRoutes = require("./src/routes/trackRoutes");
+const requireAuth = require("./src/middlewares/requireAuth");
+const keys = require("./config/keys");
 
 const app = express();
 
